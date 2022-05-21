@@ -367,6 +367,7 @@ html::-webkit-scrollbar-thumb {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  margin-top: 80px;
 }
 
 .footer-main .footer .box {
@@ -380,6 +381,7 @@ html::-webkit-scrollbar-thumb {
 }
 
 .footer-main .footer .box h3 {
+  color: #308089;
   font-size: 20px;
 }
 
@@ -413,6 +415,7 @@ html::-webkit-scrollbar-thumb {
   font-size: 13px;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: #308089;
 }
 
 .footer-main .footer .box i a {
@@ -437,6 +440,7 @@ html::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #1A3C40;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  color: #308089;
 }
 
 .category .container {
@@ -490,6 +494,7 @@ html::-webkit-scrollbar-thumb {
   border-bottom: 1px solid #1A3C40;
   padding-bottom: 20px;
   margin-bottom: 30px;
+  color: #308089;
 }
 
 .product .box-container {
@@ -504,6 +509,15 @@ html::-webkit-scrollbar-thumb {
   position: relative;
   background: #f2f2f2;
   overflow: hidden;
+}
+
+.product .box-container .box:hover .icons {
+  top: 0;
+}
+
+.product .box-container .box:hover .image img {
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
 }
 
 .product .box-container .box .icons {
@@ -554,11 +568,6 @@ html::-webkit-scrollbar-thumb {
   transition: all 0.2s ease-out;
 }
 
-.product .box-container .box .image img:hover {
-  -webkit-transform: scale(1.2);
-          transform: scale(1.2);
-}
-
 .product .box-container .box .content {
   padding: 15px 20px;
 }
@@ -570,6 +579,7 @@ html::-webkit-scrollbar-thumb {
 
 .product .box-container .box .content h3 {
   font-size: 18px;
+  color: #308089;
 }
 
 .product .box-container .box .content .stars {

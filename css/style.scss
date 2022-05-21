@@ -323,13 +323,14 @@ html{
 
         display: flex;
         justify-content: space-between;
-
+        margin-top: 80px;
         .box{
 
             display: flex;
             flex-direction: column;
 
             h3{
+                color: $green;
                 font-size: 20px;
                
             }
@@ -372,6 +373,7 @@ html{
                 font-size: 13px;
                 padding-top: 10px;
                 padding-bottom: 10px;
+                color: $green;
 
                 a{
                     
@@ -408,6 +410,7 @@ html{
         border-bottom: 1px solid $dark-green;
         padding-bottom: 20px;
         margin-bottom: 30px;
+        color: $green;
     }
     .container{
         width: 1110;
@@ -463,6 +466,7 @@ html{
         border-bottom: 1px solid $dark-green;
         padding-bottom: 20px;
         margin-bottom: 30px;
+        color: $green
     }
 
     .box-container{
@@ -472,6 +476,22 @@ html{
             position: relative;
             background: #f2f2f2;
             overflow: hidden;
+
+            &:hover{
+
+                .icons{
+                    top: 0;
+                   
+                }
+
+                .image{
+
+                    img{
+
+                        transform: scale(1.2);
+                    }
+                }
+            }
             .icons{
                 position: absolute;
                 top: -100%;
@@ -484,6 +504,8 @@ html{
                 gap: 0.5rem;
                 background: rgba(242, 242, 242, 0.7);
                 z-index: 10;
+                
+                
                 a{
                     text-align: center;
                     height: 5rem;
@@ -494,10 +516,11 @@ html{
                     font-size: 2rem;
                     box-shadow: 0 0.5rem 1rem $light-green;
 
-                    &:hover{
-                        background: $green;
-                        color: $white;
-                    }
+                   &:hover{
+
+                    background: $green;
+                    color: $white;
+                }
                 }
             }
 
@@ -511,10 +534,6 @@ html{
                    width: 100%;
                    transition: all 0.2s ease-out;
 
-                   &:hover{
-                       transform: scale(1.2);
-                   }
-                   
                 }
             }
 
@@ -528,6 +547,7 @@ html{
 
                 h3{
                     font-size: 18px;
+                    color: $green;
                 }
 
                 .stars{
